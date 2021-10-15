@@ -19,12 +19,15 @@
     c: 3, because null converts to value 0 then 3+0=3\
     d: 3null, because '3' is string, null converts to string 'null' then we got '3null'\
     e: 4, because truen converts to 1 then 1+3 = 4\
-    f: 0
-    g: 3undefined
-    h: NaN
-14: a: true
-    b: false
-    c: true
-    d: false
-    e: false
-    f: true
+    f: 0, false converts to 0, null converts to 0, then 0+0=0;\
+    g: 3undefined, because undefined converts to string 'undefined' then add string we have '3undefined'\
+    h: NaN, because undefined converts to NaN, then '3'-NaN is NaN\
+14: a: true, because '2' becomes integer 2 then 2 > 1\
+    b: false, because by dictionary order '2' > '12'\
+    c: true, because '2' becomes integer 2, then 2 == 2\
+    d: false, because each of them is a different type\
+    e: false, because true becomes 1, and 1!=2\
+    f: true, because Boolean(2) becomes true, then they have same type and same value true, so true===Boolean(2)\
+15: == is used to compare two variables, but it ignores the datatype of variable (it will make type correction); === is used to compare two variables, but this operator also checks datatype and compares two values.\
+17:
+
