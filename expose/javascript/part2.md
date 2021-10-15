@@ -29,7 +29,7 @@
     e: false, because true becomes 1, and 1!=2\
     f: true, because Boolean(2) becomes true, then they have same type and same value true, so true===Boolean(2)\
 15: == is used to compare two variables, but it ignores the datatype of variable (it will make type correction); === is used to compare two variables, but this operator also checks datatype and compares two values.\
-17:\
+17: the result is a newArr with value [2,4,6]. When we call modifyArray, we have two parameters, one is [1,2,3] and the other is function doSomething. Then firsly we make a new array called newArr. After that, we have a for loop which loop for three times. Each time, newArr will push a value from the value of the [1,2,3] modified by function doSomething, which times 2. In the end, we will return newArr which is [2,4,6].\
 19: the output is\
 1\
 4\
